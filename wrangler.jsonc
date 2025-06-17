@@ -1,0 +1,11 @@
+{
+  "name": "http-proxy-server",
+  "main": "main.ts",
+  "compatibility_date": "2025-06-16",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "dev": {
+    "port": 3000
+  }
+}

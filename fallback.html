@@ -5,13 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cloudflare Workers Proxy</title>
   <style>
-
+    body {
+      margin: 0;
+      padding: 2rem;
+    }
   </style>
 </head>
 <body>
   <h1>Examples:</h1>
-  <ul>
-    <li>http://localhost:3000/https://github.com/docker/compose/releases/download/v2.29.7/docker-compose-linux-x86_64.sha256</li>
-  </ul>
+  <ul id="examples"></ul>
+  <script>
+    const ul = document.getElementById('examples');
+    [
+      'https://raw.githubusercontent.com/acmesh-official/acme.sh/master/acme.sh',
+    ].forEach((it) => {
+      const li = ul.appendChild(document.createElement('li'));
+      const a = li.appendChild(document.createElement('a'));
+      a.target = `_blank`;
+      a.href = `${window.location.origin}/${it}`;
+      a.textContent = `${window.location.origin}/${it}`;
+    });
+  </script>
 </body>
 </html>

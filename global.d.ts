@@ -4,6 +4,6 @@
  * - https://esbuild.github.io/content-types/#text
  */
 declare module '*.html' {
-  const RawContent: string;
-  export default RawContent;
+  const rawContent: string;
+  export default rawContent;
 }
